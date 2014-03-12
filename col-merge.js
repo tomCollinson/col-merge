@@ -1,6 +1,6 @@
 (function($) {
 
-    $.columator = function(element, options) {
+    $.colMerge = function(element, options) {
 
         var defaults = {
             col: ".col",
@@ -89,12 +89,12 @@
 
     }
 
-    $.fn.columator= function(options) {
+    $.fn.colMerge= function(options) {
 
         return this.each(function() {
-            if (undefined == $(this).data('columator')) {
-                var plugin = new $.columator(this, options);
-                $(this).data('columator', plugin);
+            if (undefined == $(this).data('colMerge')) {
+                var plugin = new $.colMerge(this, options);
+                $(this).data('colMerge', plugin);
             }
         });
 
