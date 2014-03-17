@@ -89,9 +89,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .columns-3 .col {
   width: 33%;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* line 30, ../sass/screen.scss */
   .columns-3 .col {
     width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 36, ../sass/screen.scss */
+  .columns-3 .col {
+    width: 100%;
   }
 }

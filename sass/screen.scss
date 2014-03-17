@@ -26,9 +26,15 @@
     width: 33%;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .col {
       width: 50%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .col {
+      width: 100%;
     }
   }
 }

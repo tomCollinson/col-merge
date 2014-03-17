@@ -15,8 +15,6 @@
 
         plugin.settings = {};
 
-        var $element = $(element);
-
         plugin.init = function () {
             plugin.settings = $.extend({}, defaults, options);
 
@@ -96,7 +94,7 @@
     $.fn.colMerge = function (options) {
 
         return this.each(function () {
-            if (undefined == $(this).data('colMerge')) {
+            if (undefined === $(this).data('colMerge')) {
                 var plugin = new $.colMerge(this, options);
                 $(this).data('colMerge', plugin);
             }
